@@ -1,0 +1,19 @@
+<main class="animate__animated animate__fadeIn">
+        <div id="form">
+        <fieldset class="background row">
+            <legend>Informacion personal</legend>
+            <div class="col-lg-6 col-12">
+                <p>Nombre:</p><input type="text" id="nombre" name="contacto" class="main__input" placeholder="Nombre">
+                <p>Mail:</p><input type="text" id="email" class="main__input" placeholder="Direccion" type="email" name="user_email">
+                <p>Telefono:</p><input type="text" id="telefono" class="main__input" placeholder="Telefono" type="hidden" name="contact_number">
+                <p>Informacion extra:</p><textarea name="message" id="info" rows="12" class="main__input" placeholder="Informacion extra"></textarea>
+            </div>
+            <img src="img/contacto.png" class="mobile__off">
+        </fieldset>
+        <fieldset class="background full-width">
+            <legend>Confirmar</legend>
+            <input type="reset" onclick="limpiar()" value="Limpiar" class="main__input main__input--btn btn btn-primary btn-file col-lg-2">
+            <input type="submit" onclick="sendMail()" value="Enviar" class="main__input main__input--btn btn btn-primary btn-file col-lg-2">
+        </fieldset>
+    </div>
+</main>
